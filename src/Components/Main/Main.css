@@ -1,0 +1,45 @@
+.main {
+  min-width: 100vh;
+  min-height: 100vh;
+  background-color: #252e2f;
+  background-color: #01021d;
+}
+
+.vertical {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.heading-primary {
+  font-size: 9.6rem;
+  color: #ebeeeb;
+}
+
+.hi {
+  font-size: 12rem;
+  color: #00fa8e;
+}
+
+.heading-secondary {
+  font-size: 7.2rem;
+  color: #e6ffe6;
+}
+
+.subheading {
+  font-size: 3.8rem;
+  text-transform: uppercase;
+  color: #00fa8e;
+}
+
+.description {
+  font-size: 2.5rem;
+  max-width: 70rem;
+  line-height: 0.9;
+  color: #00fa8e;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

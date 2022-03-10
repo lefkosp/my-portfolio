@@ -1,0 +1,36 @@
+* {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.section {
+  padding-top: 72px;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #01021d;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #01021d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00fa8e;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #02a55f;
+}
