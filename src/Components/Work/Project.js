@@ -39,7 +39,12 @@ export default function Project(props) {
         <div
           className={props.flip ? "left container-img" : "right container-img"}
         >
-          <a href={props.link} target="_blank" className="project-link">
+          <a
+            href={props.link}
+            target="_blank"
+            rel="noreferrer"
+            className="project-link"
+          >
             <img src={props.img} className="work-img" />
           </a>
         </div>
