@@ -48,7 +48,7 @@ export default function Project(props) {
             <img
               src={props.img}
               className="work-img"
-              alt="project image screenshot"
+              alt="project screenshot"
             />
           </a>
         </div>
