@@ -35,12 +35,14 @@
 
 .tech-stack {
   padding: 1rem 2rem 1rem 3rem;
+  margin: 100px auto 0px auto;
   color: #ebeeeb;
-  font-size: 2rem;
+  font-size: 3rem;
   line-height: 1.7;
-  /* box-shadow: 26px 26px 52px #010111, -26px -26px 52px #010329; */
-  box-shadow: 26px 26px 0px #010110, -26px -26px 0px #01032a;
+  /* box-shadow: 26px 26px 0px #010110, -26px -26px 0px #01032a; */
   border-radius: 10px;
+  max-width: 500px;
+  list-style: none;
 }
 
 li::marker {
@@ -51,7 +53,14 @@ li::marker {
 .tech-stack span {
   display: inline-block;
   color: #00fa8e;
-  font-size: 2rem;
+  font-size: 3rem;
   line-height: 1.5;
   margin-bottom: 10px;
+}
+
+.tech-stack-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
 }
