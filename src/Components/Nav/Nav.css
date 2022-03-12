@@ -4,6 +4,7 @@
   position: fixed;
   width: 100%;
   padding: 1rem 3rem;
+  z-index: 100;
 }
 
 .logo {

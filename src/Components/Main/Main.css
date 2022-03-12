@@ -11,7 +11,7 @@
 }
 
 .heading-primary {
-  font-size: 9.6rem;
+  font-size: 9rem;
   color: #ebeeeb;
 }
 
@@ -21,18 +21,18 @@
 }
 
 .heading-secondary {
-  font-size: 7.2rem;
+  font-size: 6.4rem;
   color: #e6ffe6;
 }
 
 .subheading {
-  font-size: 3.8rem;
+  font-size: 2.4rem;
   text-transform: uppercase;
   color: #00fa8e;
 }
 
 .description {
-  font-size: 2.5rem;
+  font-size: 2rem;
   max-width: 70rem;
   line-height: 0.9;
   color: #00fa8e;
@@ -42,4 +42,44 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.main-container {
+  position: relative;
+}
+
+.img-container {
+  position: absolute;
+  top: 0;
+}
+
+.img-layer {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  background-position: right;
+  background-size: cover;
+}
+
+.img-layer:nth-child(1) {
+  background-image: url("../../Assets/MainPage/1.png");
+}
+.img-layer:nth-child(2) {
+  background-image: url("../../Assets/MainPage/2.png");
+}
+.img-layer:nth-child(3) {
+  background-image: url("../../Assets/MainPage/3.png");
+}
+.img-layer:nth-child(4) {
+  background-image: url("../../Assets/MainPage/4.png");
+}
+.img-layer:nth-child(5) {
+  background-image: url("../../Assets/MainPage/5.png");
+}
+.img-layer:nth-child(6) {
+  background-image: url("../../Assets/MainPage/6.png");
+}
+.img-layer:nth-child(7) {
+  background-image: url("../../Assets/MainPage/7.png");
 }

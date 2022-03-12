@@ -5,7 +5,7 @@ import logo from "../../Assets/logo-white.png";
 export default function Nav() {
   return (
     <nav className="nav">
-      <a href="/">
+      <a href="#">
         <img src={logo} alt="logo" className="logo" />
       </a>
       <ul className="nav--list">
