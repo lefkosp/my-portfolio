@@ -32,10 +32,20 @@
 
 .gradient-toleft {
   background-image: linear-gradient(to left, #000350, #01021d);
+  transition: all 0.3s ease;
+}
+
+.gradient-toleft:hover {
+  background-image: linear-gradient(to left, #000350, #000350);
 }
 
 .gradient-toright {
   background-image: linear-gradient(to right, #000350, #01021d);
+  transition: all 0.3s ease;
+}
+
+.gradient-toright:hover {
+  background-image: linear-gradient(to right, #000350, #000350);
 }
 
 .desc-container:hover {
