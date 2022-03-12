@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 import "./Project.css";
 
@@ -45,7 +45,11 @@ export default function Project(props) {
             rel="noreferrer"
             className="project-link"
           >
-            <img src={props.img} className="work-img" />
+            <img
+              src={props.img}
+              className="work-img"
+              alt="project image screenshot"
+            />
           </a>
         </div>
       </div>

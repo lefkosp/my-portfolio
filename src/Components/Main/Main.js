@@ -39,7 +39,7 @@ export default function Main() {
   }, []);
 
   return (
-    <div className="main-container">
+    <div className="main-container" id="home">
       <main className="main container">
         <h1 className="heading-primary vertical hi">Hi!</h1>
         <div>
