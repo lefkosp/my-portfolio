@@ -5,6 +5,20 @@
   width: 100%;
   padding: 1rem 3rem;
   z-index: 100;
+  transition: all 0.3s ease;
+}
+
+.move-nav {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.938);
+  transform: translateY(-72px);
+  backdrop-filter: blur(20px);
+  /* transition: all 0.3s ease; */
+}
+
+.secondary-nav {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.397);
+  backdrop-filter: blur(20px);
+  /* transition: all 0.3s ease; */
 }
 
 .logo {

@@ -1,8 +1,40 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Nav.css";
 import logo from "../../Assets/logo-white.png";
 
 export default function Nav() {
+  useEffect(() => {
+    let options = {
+      root: null,
+      threshold: 0.03,
+    };
+
+    let observer = new IntersectionObserver(handleIntersect, options);
+
+    observer.observe(document.querySelector("#section-about"));
+
+    function handleIntersect(entries, observer) {
+      if (!entries[0].isIntersecting) return;
+      document.querySelector(".nav").classList.add("move-nav");
+    }
+
+    document.addEventListener("scroll", function (e) {
+      if (window.oldScroll > window.scrollY) {
+        document.querySelector(".nav").classList.remove("move-nav");
+        document.querySelector(".nav").classList.add("secondary-nav");
+      }
+      if (!(window.oldScroll > window.scrollY)) {
+        document.querySelector(".nav").classList.add("move-nav");
+        document.querySelector(".nav").classList.remove("secondary-nav");
+      }
+      if (!window.scrollY) {
+        document.querySelector(".nav").classList.remove("move-nav");
+        document.querySelector(".nav").classList.remove("secondary-nav");
+      }
+      window.oldScroll = window.scrollY;
+    });
+  }, []);
+
   return (
     <nav className="nav">
       <a href="#home">

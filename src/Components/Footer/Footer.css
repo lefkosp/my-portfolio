@@ -2,9 +2,6 @@
   background-color: #01021d;
 }
 
-.footer p {
-}
-
 .footer-description {
   font-size: 2rem;
   color: #e6ffe6;
@@ -13,6 +10,7 @@
 .footer-div {
   text-align: center;
   padding-top: 50px;
+  line-height: 1.4;
 }
 
 .footer-div::after {
