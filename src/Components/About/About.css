@@ -35,7 +35,7 @@
 
 .tech-stack {
   padding: 1rem 2rem 1rem 3rem;
-  margin: 100px auto 0px auto;
+  margin: 100px auto 50px auto;
   color: #ebeeeb;
   font-size: 3rem;
   line-height: 1.7;
@@ -63,4 +63,7 @@ li::marker {
   align-items: center;
   justify-content: center;
   gap: 15px;
+}
+
+@media (max-width: 1035px) {
 }

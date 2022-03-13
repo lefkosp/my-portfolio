@@ -17,14 +17,14 @@ export default function Main() {
     let container = document.querySelector(".img-container");
     let img = document.querySelectorAll(".img-layer");
 
-    container.addEventListener("mousemove", function (e) {
+    const handleMouseMove = (e) => {
       let x = e.pageX;
       let y = e.pageY;
 
       img[0].style.transform =
         "translate(" + x / 100 + "px, " + y / 100 + "px)";
       img[7].style.transform =
-        "translate(" + x / 100 + "px, " + y / 100 + "px)";
+        "translate(" + x / 100 + "px, " + y / 100 + "px) rotate(350deg)";
       img[1].style.transform =
         "translate(" + (x / 100) * 1.5 + "px, " + y / 70 + "px)";
       img[2].style.transform =
@@ -37,7 +37,9 @@ export default function Main() {
         "translate(" + (x / 100) * 7.5 + "px, " + y / 70 + "px)";
       img[6].style.transform =
         "translate(" + (x / 100) * 9 + "px, " + y / 70 + "px)";
-    });
+    };
+
+    container.addEventListener("mousemove", handleMouseMove);
   }, []);
 
   return (

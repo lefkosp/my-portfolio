@@ -23,7 +23,7 @@
 .desc-container {
   padding: 15px 35px;
   position: absolute;
-  max-width: 585px;
+  max-width: 58.5rem;
   border-radius: 25px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.555);
   transition: all 0.3s ease;
@@ -89,6 +89,10 @@
 }
 
 .right {
+  grid-area: 1/7/-1/-1;
+}
+
+.right-text {
   grid-area: 1/6/-1/-1;
 }
 
@@ -133,4 +137,38 @@
   color: #fff;
   font-weight: 500;
   transition: all 0.3s ease;
+}
+
+@media (max-width: 1035px) {
+  /*.work-img {
+    width: 40rem;
+    border-radius: 20px;
+  }
+
+  .desc-container {
+    max-width: 45rem;
+  }
+
+  .project-description {
+    font-size: 1.4rem;
+  }
+ .project-container {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  .container-img {
+    grid-column: 1/5;
+  }
+
+  .info-container {
+    grid-column: 4/-1;
+  }
+
+  .right {
+    grid-area: 1/4/-1/-1;
+  }
+
+  .left {
+    grid-area: 1/1/-1/5;
+  } */
 }

@@ -16,7 +16,7 @@ export default function Project(props) {
       <div className={`${props.flip ? "align--right" : ""} project-container`}>
         <div
           className={
-            props.flip ? "right info-container" : "left info-container"
+            props.flip ? "right-text info-container" : "left info-container"
           }
         >
           <h5 className="subheading">Featured Project</h5>

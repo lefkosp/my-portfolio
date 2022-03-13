@@ -3,6 +3,8 @@
   min-height: 100vh;
   background-color: #252e2f;
   background-color: #01021d;
+  pointer-events: none;
+  text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.26);
 }
 
 .vertical {
@@ -11,32 +13,41 @@
 }
 
 .heading-primary {
+  position: relative;
   font-size: 9rem;
   color: #ebeeeb;
   z-index: 3;
 }
 
 .hi {
+  position: relative;
   font-size: 12rem;
   color: #00fa8e;
+  z-index: 3;
 }
 
 .heading-secondary {
+  position: relative;
   font-size: 6.4rem;
   color: #e6ffe6;
+  z-index: 3;
 }
 
 .subheading {
+  position: relative;
   font-size: 2.4rem;
   text-transform: uppercase;
   color: #00fa8e;
+  z-index: 3;
 }
 
 .description {
+  position: relative;
   font-size: 2rem;
   max-width: 70rem;
   line-height: 0.9;
   color: #00fa8e;
+  z-index: 3;
 }
 
 .container {
@@ -59,7 +70,7 @@
   width: 95vw;
   height: 95vh;
   top: 20px;
-  left: 250px;
+  left: 300px;
   background-position: right;
   background-size: cover;
 }
@@ -90,4 +101,34 @@
   background-image: url("../../Assets/MainPage/1.png");
   transform: scaleY(-1);
   left: -650px;
+}
+
+@media (max-width: 1700px) {
+  .img-layer:nth-child(8) {
+    left: -450px;
+  }
+}
+
+@media (max-width: 1550px) {
+  .img-layer {
+    left: 350px;
+  }
+}
+
+@media (max-width: 1035px) {
+  .heading-primary {
+    font-size: 6.4rem;
+  }
+
+  .heading-secondary {
+    font-size: 5rem;
+  }
+
+  .subheading {
+    font-size: 1.8rem;
+  }
+
+  .description {
+    font-size: 1.6rem;
+  }
 }
