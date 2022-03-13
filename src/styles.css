@@ -11,13 +11,11 @@ html {
   background-color: #01021d;
 }
 
-body {
-  overflow-x: hidden;
-}
 
 html,
 body {
   overscroll-behavior-y: none;
+  overflow-x: hidden;
 }
 
 .section {
@@ -42,4 +40,9 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #02a55f;
+}
+
+::selection {
+  color: #00fa8e;
+  background: #ffffff2f;
 }

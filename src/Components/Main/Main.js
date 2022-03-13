@@ -23,18 +23,20 @@ export default function Main() {
 
       img[0].style.transform =
         "translate(" + x / 100 + "px, " + y / 100 + "px)";
+      img[7].style.transform =
+        "translate(" + x / 100 + "px, " + y / 100 + "px)";
       img[1].style.transform =
-        "translate(" + (x / 100) * 2 + "px, " + y / 100 + "px)";
+        "translate(" + (x / 100) * 1.5 + "px, " + y / 70 + "px)";
       img[2].style.transform =
-        "translate(" + (x / 100) * 4 + "px, " + y / 100 + "px)";
+        "translate(" + (x / 100) * 3 + "px, " + y / 70 + "px)";
       img[3].style.transform =
-        "translate(" + (x / 100) * 6 + "px, " + y / 100 + "px)";
+        "translate(" + (x / 100) * 4.5 + "px, " + y / 70 + "px)";
       img[4].style.transform =
-        "translate(" + (x / 100) * 8 + "px, " + y / 100 + "px)";
+        "translate(" + (x / 100) * 6 + "px, " + y / 70 + "px)";
       img[5].style.transform =
-        "translate(" + (x / 100) * 10 + "px, " + y / 100 + "px)";
+        "translate(" + (x / 100) * 7.5 + "px, " + y / 70 + "px)";
       img[6].style.transform =
-        "translate(" + (x / 100) * 12 + "px, " + y / 100 + "px)";
+        "translate(" + (x / 100) * 9 + "px, " + y / 70 + "px)";
     });
   }, []);
 
@@ -55,6 +57,7 @@ export default function Main() {
         className="img-container"
         style={{ transform: `translateY(${offsetY * 0.2}px)` }}
       >
+        <div className="img-layer"></div>
         <div className="img-layer"></div>
         <div className="img-layer"></div>
         <div className="img-layer"></div>

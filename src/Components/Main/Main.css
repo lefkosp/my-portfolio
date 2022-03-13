@@ -24,7 +24,6 @@
 .heading-secondary {
   font-size: 6.4rem;
   color: #e6ffe6;
-  z-index: 1;
 }
 
 .subheading {
@@ -59,7 +58,8 @@
   position: absolute;
   width: 95vw;
   height: 95vh;
-  top: 0;
+  top: 20px;
+  left: 250px;
   background-position: right;
   background-size: cover;
 }
@@ -84,5 +84,10 @@
 }
 .img-layer:nth-child(7) {
   background-image: url("../../Assets/MainPage/7.png");
-  /* z-index: 2; */
+  /* z-index: -5; */
+}
+.img-layer:nth-child(8) {
+  background-image: url("../../Assets/MainPage/1.png");
+  transform: scaleY(-1);
+  left: -650px;
 }
