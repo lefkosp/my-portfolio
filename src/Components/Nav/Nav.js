@@ -1,28 +1,61 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./Nav.css";
 import logo from "../../Assets/logo-white.png";
 
 export default function Nav() {
+  const [navBehavior, setNavBehavior] = useState({
+    scrollDown: false,
+    scrollUp: false,
+    noScroll: true,
+  });
+
   useEffect(() => {
-    document.addEventListener("scroll", function (e) {
+    const changeNavStyle = function () {
       if (window.oldScroll > window.scrollY) {
-        document.querySelector(".nav").classList.remove("move-nav");
-        document.querySelector(".nav").classList.add("secondary-nav");
+        setNavBehavior(() => {
+          return {
+            scrollDown: false,
+            scrollUp: true,
+            noScroll: false,
+          };
+        });
+      } else if (window.oldScroll < window.scrollY) {
+        setNavBehavior(() => {
+          return {
+            scrollUp: false,
+            scrollDown: true,
+            noScroll: false,
+          };
+        });
       }
-      if (!(window.oldScroll > window.scrollY)) {
-        document.querySelector(".nav").classList.add("move-nav");
-        document.querySelector(".nav").classList.remove("secondary-nav");
+      if (window.scrollY === 0) {
+        setNavBehavior(() => {
+          return {
+            scrollDown: false,
+            scrollUp: false,
+            noScroll: true,
+          };
+        });
       }
-      if (!window.scrollY) {
-        document.querySelector(".nav").classList.remove("move-nav");
-        document.querySelector(".nav").classList.remove("secondary-nav");
-      }
+
       window.oldScroll = window.scrollY;
-    });
+    };
+
+    window.addEventListener("scroll", changeNavStyle);
   }, []);
 
   return (
-    <nav className="nav">
+    <nav
+      className={`${
+        navBehavior.noScroll
+          ? ""
+          : `${
+              navBehavior.scrollDown
+                ? "move-nav"
+                : `${navBehavior.scrollUp ? "secondary-nav" : ""}`
+            }`
+      } nav`}
+    >
       <a href="#home">
         <img src={logo} alt="logo" className="logo" />
       </a>
