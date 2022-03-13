@@ -54,12 +54,6 @@
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.685);
 }
 
-.work-img:hover {
-  border-radius: 15px;
-  transform: translateY(-5px);
-  box-shadow: 0 20px 30px rgba(75, 75, 75, 0.295);
-}
-
 .project-description {
   font-size: 1.5rem;
   color: #00ff91;
@@ -70,7 +64,24 @@
 }
 
 .project-link {
+  position: relative;
   background-color: #01021d;
+}
+
+.project-link:hover > .work-img:hover {
+  border-radius: 15px;
+  transform: translateY(-5px);
+  box-shadow: 0 20px 30px rgba(75, 75, 75, 0.295);
+}
+
+.project-link:hover > .project-src-link {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.425);
+}
+
+#src-link:hover {
+  color: #00ff91;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.685);
 }
 
 .info-container {
@@ -107,4 +118,19 @@
 .tech-stack-list-item {
   font-weight: 500;
   letter-spacing: 1px;
+}
+
+.project-src-link:link,
+.project-src-link:visited {
+  position: absolute;
+  display: inline-block;
+  z-index: 2;
+  right: 0;
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding: 1rem 2rem;
+  background-color: #01021d;
+  color: #fff;
+  font-weight: 500;
+  transition: all 0.3s ease;
 }

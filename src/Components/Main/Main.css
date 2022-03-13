@@ -13,6 +13,7 @@
 .heading-primary {
   font-size: 9rem;
   color: #ebeeeb;
+  z-index: 3;
 }
 
 .hi {
@@ -23,6 +24,7 @@
 .heading-secondary {
   font-size: 6.4rem;
   color: #e6ffe6;
+  z-index: 1;
 }
 
 .subheading {
@@ -55,8 +57,8 @@
 
 .img-layer {
   position: absolute;
-  width: 100vw;
-  height: 100vh;
+  width: 95vw;
+  height: 95vh;
   top: 0;
   background-position: right;
   background-size: cover;
@@ -82,4 +84,5 @@
 }
 .img-layer:nth-child(7) {
   background-image: url("../../Assets/MainPage/7.png");
+  /* z-index: 2; */
 }

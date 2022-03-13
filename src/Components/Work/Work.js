@@ -18,6 +18,7 @@ export default function Work() {
           description="A landing page for a food delivery service with a subscription. Explaining how it works, showing meal examples, testimonials and more."
           techStack={["HTML", "CSS"]}
           link="https://omnifood-lefkos.netlify.app/"
+          srcLink="https://github.com/lefkosp/omnifood"
           // note={{ status: "yes", msg: "" }}
           flip={false}
         />
@@ -27,6 +28,7 @@ export default function Work() {
           description="A workout tracker app on the web. You can choose between running and cycling and you can also set the distance, duration and other properties"
           techStack={["HTML", "CSS", "JavaScript"]}
           link="https://mapty-lefkos.netlify.app/"
+          srcLink="https://github.com/lefkosp/mapty"
           // note={{ status: "yes", msg: "" }}
           flip={true}
         />
@@ -36,6 +38,7 @@ export default function Work() {
           description="A recipe app that let's you search what you are looking for, upload your own, bookmark your favorites and change the servings to your liking."
           techStack={["HTML", "CSS", "JavaScript"]}
           link="https://forkify-lefkos.netlify.app/"
+          srcLink="https://github.com/lefkosp/forkify"
           // note={{ status: "yes", msg: "" }}
           flip={false}
         />
