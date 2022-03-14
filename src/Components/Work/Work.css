@@ -18,5 +18,28 @@
 @media (max-width: 630px) {
   #section-work {
     margin-top: 50px;
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  #section-work {
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+}
+
+@media (max-width: 400px) {
+  #section-work {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+}
+
+@media (max-width: 3600px) {
+  #section-work {
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 }
