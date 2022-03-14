@@ -39,7 +39,7 @@ export default function Main() {
         "translate(" + (x / 100) * 9 + "px, " + y / 70 + "px)";
     };
 
-    container.addEventListener("mousemove", handleMouseMove);
+    document.body.addEventListener("mousemove", handleMouseMove);
   }, []);
 
   return (

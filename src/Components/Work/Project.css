@@ -140,7 +140,7 @@
 }
 
 @media (max-width: 1035px) {
-  /*.work-img {
+  /* .work-img {
     width: 40rem;
     border-radius: 20px;
   }
@@ -152,7 +152,7 @@
   .project-description {
     font-size: 1.4rem;
   }
- .project-container {
+  .project-container {
     grid-template-columns: repeat(8, 1fr);
   }
 
@@ -165,7 +165,7 @@
   }
 
   .right {
-    grid-area: 1/4/-1/-1;
+    grid-area: 1/5/-1/-1;
   }
 
   .left {

@@ -4,14 +4,11 @@ import "./About.css";
 
 export default function About() {
   useEffect(() => {
-    let container = document.querySelector(".container-about");
     let techBox = document.querySelector(".tech-stack");
 
-    container.addEventListener("mousemove", function (e) {
+    document.body.addEventListener("mousemove", function (e) {
       let x = e.pageX / 70;
       let y = e.pageY / 70;
-
-      // console.log(x, y);
 
       techBox.style.boxShadow =
         x +
