@@ -28,3 +28,11 @@
   height: 100%;
   color: #00fa8e;
 }
+
+@media (max-width: 730px) {
+  .contact-description {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin: 0 50px;
+  }
+}

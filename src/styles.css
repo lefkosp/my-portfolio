@@ -46,3 +46,8 @@ body {
   background: #ffffff2f;
 }
 
+@media (max-width: 730px) {
+  .section {
+    padding-top: 0;
+  }
+}

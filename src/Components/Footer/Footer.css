@@ -30,3 +30,17 @@
   font-size: 1.6rem;
   color: #fff;
 }
+
+@media (max-width: 730px) {
+  .footer-description {
+    font-size: 1.4rem;
+  }
+
+  .footer-div::after {
+    width: 60px;
+  }
+
+  .year {
+    font-size: 1.2rem;
+  }
+}

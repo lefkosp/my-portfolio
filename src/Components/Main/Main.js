@@ -5,7 +5,7 @@ import "./Main.css";
 
 export default function Main() {
   useEffect(() => {
-    Aos.init({ duration: 400, easing: "ease-in-out", once:"true" });
+    Aos.init({ duration: 400, easing: "ease-in-out", once: "true" });
   }, []);
 
   const [offsetY, setOffsetY] = useState(0);
@@ -20,7 +20,6 @@ export default function Main() {
   }, []);
 
   useEffect(() => {
-    let container = document.querySelector(".img-container");
     let img = document.querySelectorAll(".img-layer");
 
     const handleMouseMove = (e) => {
@@ -45,7 +44,9 @@ export default function Main() {
         "translate(" + (x / 100) * 9 + "px, " + y / 70 + "px)";
     };
 
-    document.body.addEventListener("mousemove", handleMouseMove);
+    if (window.innerWidth > 1260) {
+      document.body.addEventListener("mousemove", handleMouseMove);
+    }
   }, []);
 
   return (
@@ -58,7 +59,7 @@ export default function Main() {
         >
           Hi!
         </h1>
-        <div>
+        <div className="headings-container">
           <p className="subheading" data-aos="fade-down">
             My name is
           </p>
@@ -68,7 +69,7 @@ export default function Main() {
           <h2 className="heading-secondary" data-aos="fade-down">
             I make stuff for the web.
           </h2>
-          <p className="description" data-aos="fade-down">
+          <p className="description description-main" data-aos="fade-down">
             I am a web developer specialized in building the front-end.
           </p>
         </div>

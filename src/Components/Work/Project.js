@@ -55,7 +55,9 @@ export default function Project(props) {
         </div>
         <div
           data-aos="fade-up"
-          className={props.flip ? "left container-img" : "right container-img"}
+          className={
+            props.flip ? "left-image container-img" : "right container-img"
+          }
         >
           <a
             href={props.link}
