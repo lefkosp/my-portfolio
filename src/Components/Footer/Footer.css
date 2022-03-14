@@ -7,6 +7,19 @@
   color: #e6ffe6;
 }
 
+.footer-description-secondary {
+  font-size: 1.4rem;
+  color: #e6ffe6;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #00fa8e;
+}
+
 .footer-div {
   text-align: center;
   padding-top: 50px;
@@ -22,6 +35,10 @@
   background-color: #e6ffe6;
   margin-top: 15px;
   /* margin-bottom: 45px; */
+}
+
+p b {
+  font-size: inherit;
 }
 
 .year {
@@ -42,5 +59,9 @@
 
   .year {
     font-size: 1.2rem;
+  }
+
+  .footer-div::after {
+    margin-top: 2px;
   }
 }
