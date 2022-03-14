@@ -8,29 +8,43 @@
 }
 
 .vertical {
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
+  writing-mode: vertical-lr;
+  transform: scaleY(-1);
 }
 
 .heading-primary {
   position: relative;
   font-size: 9rem;
   color: #ebeeeb;
-  z-index: 3;
+  z-index: 3 !important;
 }
 
 .hi {
   position: relative;
   font-size: 12rem;
   color: #00fa8e;
-  z-index: 3;
+  z-index: 3 !important;
+  /* animation-name: lefttoright;
+  animation-duration: 300ms; */
+  animation: lefttoright 300ms 50ms ease-in;
+}
+
+@keyframes lefttoright {
+  from {
+    left: -250px;
+    opacity: 0;
+  }
+  to {
+    left: 0px;
+    opacity: 1;
+  }
 }
 
 .heading-secondary {
   position: relative;
   font-size: 6.4rem;
   color: #e6ffe6;
-  z-index: 3;
+  z-index: 3 !important;
 }
 
 .subheading {
@@ -38,7 +52,7 @@
   font-size: 2.4rem;
   text-transform: uppercase;
   color: #00fa8e;
-  z-index: 3;
+  z-index: 3 !important;
 }
 
 .description {
@@ -47,7 +61,7 @@
   max-width: 70rem;
   line-height: 0.9;
   color: #00fa8e;
-  z-index: 3;
+  z-index: 3 !important;
 }
 
 .container {

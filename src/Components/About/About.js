@@ -1,8 +1,13 @@
 import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import "./About.css";
 
 export default function About() {
+  useEffect(() => {
+    Aos.init({ duration: 400, easing: "ease-in-out", once: "true" });
+  }, []);
   useEffect(() => {
     let techBox = document.querySelector(".tech-stack");
 
@@ -25,8 +30,10 @@ export default function About() {
   return (
     <div id="section-about" className="section">
       <div className="container-about">
-        <h2 className="section-headings">About me</h2>
-        <div className="container-about-me">
+        <h2 className="section-headings" data-aos="fade-up">
+          About me
+        </h2>
+        <div className="container-about-me" data-aos="fade-up">
           <p className="about-me">
             Hello, my name is Lefkos and I really enjoy creating things on the
             internet. Ever since I can remember I have been fascinated by the
@@ -41,9 +48,10 @@ export default function About() {
           style={{
             boxShadow: `26px 26px 0px #010110, -26px -26px 0px #01032a`,
           }}
+          data-aos="zoom-in"
         >
-          <span>The tech I use: &darr;</span>
-          <li className="tech-stack-item">
+          <span data-aos="zoom-in">The tech I use: &darr;</span>
+          <li className="tech-stack-item" data-aos="zoom-in">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="icon icon-tabler icon-tabler-brand-html5"
@@ -62,7 +70,7 @@ export default function About() {
             </svg>
             HTML
           </li>
-          <li className="tech-stack-item">
+          <li className="tech-stack-item" data-aos="zoom-in">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="icon icon-tabler icon-tabler-brand-css3"
@@ -81,7 +89,7 @@ export default function About() {
             </svg>
             CSS
           </li>
-          <li className="tech-stack-item">
+          <li className="tech-stack-item" data-aos="zoom-in">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="icon icon-tabler icon-tabler-brand-sass"
@@ -100,7 +108,7 @@ export default function About() {
             </svg>
             Sass
           </li>
-          <li className="tech-stack-item">
+          <li className="tech-stack-item" data-aos="zoom-in">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="icon icon-tabler icon-tabler-brand-tailwind"
@@ -118,7 +126,7 @@ export default function About() {
             </svg>
             TailwindCSS
           </li>
-          <li className="tech-stack-item">
+          <li className="tech-stack-item" data-aos="zoom-in">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="icon icon-tabler icon-tabler-brand-javascript"
@@ -138,7 +146,7 @@ export default function About() {
             </svg>
             Vanilla JavaScript
           </li>
-          <li className="tech-stack-item">
+          <li className="tech-stack-item" data-aos="zoom-in">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="icon icon-tabler icon-tabler-brand-react-native"

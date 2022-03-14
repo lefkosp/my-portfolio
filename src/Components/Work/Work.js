@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import Project from "./Project";
 import "./Work.css";
@@ -8,9 +10,14 @@ import mapty from "../../Assets/Projects/mapty.jpg";
 import omnifood from "../../Assets/Projects/omnifood.jpg";
 
 export default function Work() {
+  useEffect(() => {
+    Aos.init({ duration: 400, easing: "ease-in-out", once: "true" });
+  }, []);
   return (
     <section id="section-work" className="section">
-      <h2 className="section-headings">Work</h2>
+      <h2 className="section-headings" data-aos="fade-up">
+        Work
+      </h2>
       <div className="project-section">
         <Project
           img={omnifood}

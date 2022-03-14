@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import "./Footer.css";
 
 export default function Footer() {
+  useEffect(() => {
+    Aos.init({ duration: 400, easing: "ease-in-out", once: "true" });
+  }, []);
   let year = new Date().getFullYear();
   return (
     <footer className="footer">

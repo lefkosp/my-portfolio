@@ -1,7 +1,13 @@
 import React, { useState, useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import "./Main.css";
 
 export default function Main() {
+  useEffect(() => {
+    Aos.init({ duration: 400, easing: "ease-in-out", once:"true" });
+  }, []);
+
   const [offsetY, setOffsetY] = useState(0);
   const handleScroll = () => setOffsetY(window.pageYOffset);
 
@@ -45,12 +51,24 @@ export default function Main() {
   return (
     <div className="main-container" id="home">
       <main className="main container">
-        <h1 className="heading-primary vertical hi">Hi!</h1>
+        <h1
+          className="heading-primary vertical hi"
+          // style={{ transform: "rotate(180deg)" }}
+          // data-aos="slide-right"
+        >
+          Hi!
+        </h1>
         <div>
-          <p className="subheading">My name is</p>
-          <h1 className="heading-primary">Lefkos Papapetrou.</h1>
-          <h2 className="heading-secondary">I make stuff for the web.</h2>
-          <p className="description">
+          <p className="subheading" data-aos="fade-down">
+            My name is
+          </p>
+          <h1 className="heading-primary" data-aos="fade-down">
+            Lefkos Papapetrou.
+          </h1>
+          <h2 className="heading-secondary" data-aos="fade-down">
+            I make stuff for the web.
+          </h2>
+          <p className="description" data-aos="fade-down">
             I am a web developer specialized in building the front-end.
           </p>
         </div>

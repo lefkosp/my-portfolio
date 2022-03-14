@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import "./Project.css";
 
 export default function Project(props) {
+  useEffect(() => {
+    Aos.init({ duration: 400, easing: "ease-in-out", once: "true" });
+  }, []);
   const techStackElements = props.techStack.map((tech, index) => {
     return (
       <li key={index} className="tech-stack-list-item">
@@ -19,9 +24,19 @@ export default function Project(props) {
             props.flip ? "right-text info-container" : "left info-container"
           }
         >
-          <h5 className="subheading">Featured Project</h5>
-          <h2 className="heading-secondary">{props.title}</h2>
+          <h5 className="subheading" data-aos="fade-up">
+            Featured Project
+          </h5>
+          <h2
+            className="heading-secondary"
+            data-aos="fade-up"
+            data-aos-delay="50"
+          >
+            {props.title}
+          </h2>
           <div
+            data-aos-delay="100"
+            data-aos="fade-up"
             className={`${
               props.flip ? "gradient-toleft" : "gradient-toright"
             } desc-container`}
@@ -29,6 +44,8 @@ export default function Project(props) {
             <p className="project-description">{props.description}</p>
           </div>
           <ul
+            data-aos-delay="150"
+            data-aos="fade-up"
             className={`${
               props.flip ? "align--right-absolute" : ""
             } tech-stack-list`}
@@ -37,6 +54,7 @@ export default function Project(props) {
           </ul>
         </div>
         <div
+          data-aos="fade-up"
           className={props.flip ? "left container-img" : "right container-img"}
         >
           <a

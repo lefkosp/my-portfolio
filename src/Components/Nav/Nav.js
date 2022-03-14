@@ -1,9 +1,15 @@
 import React, { useState, useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import "./Nav.css";
 import logo from "../../Assets/logo-white.png";
 import resume from "../../Assets/CV Lefkos_Papapetrou.pdf";
 
 export default function Nav() {
+  useEffect(() => {
+    Aos.init({ duration: 400, easing: "ease-in-out", once: "true" });
+  }, []);
+
   const [navBehavior, setNavBehavior] = useState({
     scrollDown: false,
     scrollUp: false,
@@ -57,26 +63,42 @@ export default function Nav() {
             }`
       } nav`}
     >
-      <a href="#home">
+      <a href="#home" data-aos="fade-down">
         <img src={logo} alt="logo" className="logo" />
       </a>
       <ul className="nav--list">
-        <li className="nav--list-item">
+        <li
+          className="nav--list-item"
+          data-aos="fade-down"
+          data-aos-delay="100"
+        >
           <a href="#section-about" className="nav--list-link">
             About
           </a>
         </li>
-        <li className="nav--list-item">
+        <li
+          className="nav--list-item"
+          data-aos="fade-down"
+          data-aos-delay="200"
+        >
           <a href="#section-work" className="nav--list-link">
             Work
           </a>
         </li>
-        <li className="nav--list-item">
+        <li
+          className="nav--list-item"
+          data-aos="fade-down"
+          data-aos-delay="300"
+        >
           <a href="#section-contact" className="nav--list-link">
             Contact
           </a>
         </li>
-        <li className="nav--list-item">
+        <li
+          className="nav--list-item"
+          data-aos="fade-down"
+          data-aos-delay="400"
+        >
           <a href={resume} download className="nav--list-link nav--list-btn">
             Resume
           </a>
