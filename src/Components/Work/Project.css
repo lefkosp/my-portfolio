@@ -200,14 +200,17 @@
     font-size: 0.9rem;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.452);
     padding-right: 5px;
+    padding-left: 5px;
   }
 
   .work-container .heading-secondary {
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
     padding-right: 5px;
+    padding-left: 5px;
   }
 
   .tech-stack-list {
     padding-right: 5px;
+    padding-left: 5px;
   }
 }
