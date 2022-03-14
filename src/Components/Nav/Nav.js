@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Nav.css";
 import logo from "../../Assets/logo-white.png";
+import resume from "../../Assets/CV Lefkos_Papapetrou.pdf";
 
 export default function Nav() {
   const [navBehavior, setNavBehavior] = useState({
@@ -76,7 +77,7 @@ export default function Nav() {
           </a>
         </li>
         <li className="nav--list-item">
-          <a href="/" className="nav--list-link nav--list-btn">
+          <a href={resume} download className="nav--list-link nav--list-btn">
             Resume
           </a>
         </li>
