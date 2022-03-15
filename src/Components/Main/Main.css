@@ -86,7 +86,7 @@
   top: 20px;
   left: 300px;
   background-position: right;
-  /* background-size: cover; */
+  background-size: cover;
 }
 
 .img-layer:nth-child(1) {
@@ -201,6 +201,10 @@
 @media (max-width: 600px) {
   .headings-container {
     max-width: 450px;
+  }
+
+  .img-layer {
+    position: absolute;
   }
 }
 
