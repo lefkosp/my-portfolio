@@ -55,18 +55,27 @@ export default function Main() {
         <h1
           className="heading-primary vertical hi"
           // style={{ transform: "rotate(180deg)" }}
-          // data-aos="slide-right"
+          // data-aos="fade-down"
+          // data-aos-delay="200"
         >
           Hi!
         </h1>
         <div className="headings-container">
-          <p className="subheading" data-aos="fade-down">
+          <p className="subheading" data-aos="fade-down" data-aos-delay="300">
             My name is
           </p>
-          <h1 className="heading-primary" data-aos="fade-down">
+          <h1
+            className="heading-primary"
+            data-aos="fade-down"
+            data-aos-delay="200"
+          >
             Lefkos Papapetrou.
           </h1>
-          <h2 className="heading-secondary" data-aos="fade-down">
+          <h2
+            className="heading-secondary"
+            data-aos="fade-down"
+            data-aos-delay="100"
+          >
             I make stuff for the web.
           </h2>
           <p className="description description-main" data-aos="fade-down">

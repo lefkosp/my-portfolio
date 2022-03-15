@@ -24,9 +24,10 @@
   font-size: 12rem;
   color: #00fa8e;
   z-index: 3 !important;
-  /* animation-name: lefttoright;
-  animation-duration: 300ms; */
-  animation: lefttoright 300ms 50ms ease-in;
+  animation-name: lefttoright;
+  animation-duration: 400ms;
+  animation-delay: 250ms;
+  animation-timing-function: ease-in-out;
 }
 
 @keyframes lefttoright {

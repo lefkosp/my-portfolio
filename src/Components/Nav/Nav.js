@@ -135,7 +135,12 @@ export default function Nav() {
           </a>
         </li>
       </ul>
-      <div onClick={handleMobileNav} className="open-nav-btn">
+      <div
+        onClick={handleMobileNav}
+        className="open-nav-btn"
+        data-aos="fade-down"
+        data-aos-delay="100"
+      >
         <ion-icon
           name={`${openNav ? "close" : "menu"}-outline`}
           className="nav-btn-icon"
