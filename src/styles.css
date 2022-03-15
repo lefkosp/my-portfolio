@@ -24,6 +24,13 @@ body {
   background-color: #01021d;
 }
 
+:target:before {
+  content: "";
+  display: block;
+  height: 70px;
+  margin: -70px 0 0;
+}
+
 ::-webkit-scrollbar {
   width: 7px;
 }

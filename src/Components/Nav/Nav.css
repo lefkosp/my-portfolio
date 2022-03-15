@@ -42,6 +42,10 @@
   color: #00fa8e;
 }
 
+.active {
+  color: #00fa8e !important;
+}
+
 .nav--list-btn {
   border: 2px solid #00fa8e;
   padding: 1rem 2rem;
@@ -52,4 +56,70 @@
 
 .nav--list-btn:hover {
   background-color: #a3dda36e;
+}
+
+.open-nav-btn {
+  display: none;
+  margin-left: auto;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  transition: all 0.3s ease;
+}
+
+.close-nav-btn {
+  display: none;
+  margin-left: auto;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+}
+
+ion-icon {
+  color: #fff;
+  font-size: 40px;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 750px) {
+  .nav {
+    padding: 1rem 1.5rem 1rem 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav--list {
+    position: absolute;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    background-color: #01021d21;
+    backdrop-filter: blur(20px);
+    padding: 3rem;
+    padding-top: 5rem;
+    transform: translateX(105%);
+    transition: all 0.3s ease-in;
+    font-weight: 500;
+    overflow-y: hidden;
+  }
+
+  .nav--list-item:last-child {
+    margin-top: auto;
+    margin-bottom: 5rem;
+  }
+
+  .show-nav {
+    transform: translateX(0);
+  }
+
+  .hide-nav {
+    transform: translateX(105%);
+  }
+
+  .open-nav-btn {
+    display: block;
+  }
+
+  .close-nav-btn {
+    display: block;
+  }
 }

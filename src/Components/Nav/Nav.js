@@ -6,6 +6,8 @@ import logo from "../../Assets/logo-white.png";
 import resume from "../../Assets/CV Lefkos_Papapetrou.pdf";
 
 export default function Nav() {
+  const [openNav, setOpenNav] = useState(false);
+
   useEffect(() => {
     Aos.init({ duration: 400, easing: "ease-in-out", once: "true" });
   }, []);
@@ -51,6 +53,20 @@ export default function Nav() {
     window.addEventListener("scroll", changeNavStyle);
   }, []);
 
+  const links = document.querySelectorAll(".nav--list-link");
+
+  const handleClick = (e) => {
+    links.forEach((link) => link.classList.remove("active"));
+    e.target.classList.add("active");
+    handleMobileNav();
+  };
+
+  const mobileNav = document.querySelector(".nav--list");
+
+  function handleMobileNav() {
+    setOpenNav((openNav) => !openNav);
+  }
+
   return (
     <nav
       className={`${
@@ -66,13 +82,22 @@ export default function Nav() {
       <a href="#home" data-aos="fade-down">
         <img src={logo} alt="logo" className="logo" />
       </a>
-      <ul className="nav--list">
+      <ul className={`${openNav ? "show-nav" : "hide-nav"} nav--list`}>
+        <li className="nav--list-item">
+          {/* <a onClick={handleMobileNav} className="close-nav-btn">
+            <ion-icon name="close-outline" className="nav-btn-icon"></ion-icon>
+          </a> */}
+        </li>
         <li
           className="nav--list-item"
           data-aos="fade-down"
           data-aos-delay="100"
         >
-          <a href="#section-about" className="nav--list-link">
+          <a
+            href="#section-about"
+            onClick={handleClick}
+            className="nav--list-link"
+          >
             About
           </a>
         </li>
@@ -81,7 +106,11 @@ export default function Nav() {
           data-aos="fade-down"
           data-aos-delay="200"
         >
-          <a href="#section-work" className="nav--list-link">
+          <a
+            href="#section-work"
+            onClick={handleClick}
+            className="nav--list-link"
+          >
             Work
           </a>
         </li>
@@ -90,7 +119,11 @@ export default function Nav() {
           data-aos="fade-down"
           data-aos-delay="300"
         >
-          <a href="#section-contact" className="nav--list-link">
+          <a
+            href="#section-contact"
+            onClick={handleClick}
+            className="nav--list-link"
+          >
             Contact
           </a>
         </li>
@@ -104,6 +137,12 @@ export default function Nav() {
           </a>
         </li>
       </ul>
+      <a onClick={handleMobileNav} className="open-nav-btn">
+        <ion-icon
+          name={`${openNav ? "close" : "menu"}-outline`}
+          className="nav-btn-icon"
+        ></ion-icon>
+      </a>
     </nav>
   );
 }
