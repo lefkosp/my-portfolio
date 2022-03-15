@@ -80,6 +80,10 @@ ion-icon {
   transition: all 0.3s ease;
 }
 
+.item2 {
+  display: none;
+}
+
 @media (max-width: 750px) {
   .nav {
     padding: 1rem 1.5rem 1rem 1rem;
@@ -99,6 +103,14 @@ ion-icon {
     transform: translateX(105%);
     transition: all 0.3s ease-in;
     font-weight: 500;
+  }
+
+  .item1 {
+    display: none;
+  }
+
+  .item2 {
+    display: inline-block;
   }
 
   .nav--list-item:last-child {

@@ -126,9 +126,16 @@ export default function Nav() {
           </a>
         </li>
         <li
-          className="nav--list-item"
+          className="nav--list-item item1"
           data-aos="fade-down"
           data-aos-delay="400"
+        >
+          <a href={resume} download className="nav--list-link nav--list-btn">
+            Resume
+          </a>
+        </li>
+        <li
+          className="nav--list-item item2"
         >
           <a href={resume} download className="nav--list-link nav--list-btn">
             Resume
