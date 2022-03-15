@@ -10,7 +10,7 @@
 
 .move-nav {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.938);
-  transform: translateY(-72px);
+  transform: translateY(-73px);
   backdrop-filter: blur(20px);
 }
 
@@ -125,5 +125,9 @@ ion-icon {
   .nav--list-link:link,
   .nav--list-link:visited {
     font-size: 2.2rem;
+  }
+
+  .move-nav {
+    transform: translateY(-84px);
   }
 }
