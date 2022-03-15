@@ -135,12 +135,12 @@ export default function Nav() {
           </a>
         </li>
       </ul>
-      <a onClick={handleMobileNav} className="open-nav-btn">
+      <div onClick={handleMobileNav} className="open-nav-btn">
         <ion-icon
           name={`${openNav ? "close" : "menu"}-outline`}
           className="nav-btn-icon"
         ></ion-icon>
-      </a>
+      </div>
     </nav>
   );
 }
