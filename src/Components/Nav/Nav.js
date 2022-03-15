@@ -61,8 +61,6 @@ export default function Nav() {
     handleMobileNav();
   };
 
-  const mobileNav = document.querySelector(".nav--list");
-
   function handleMobileNav() {
     setOpenNav((openNav) => !openNav);
   }
