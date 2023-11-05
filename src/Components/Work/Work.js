@@ -8,6 +8,7 @@ import "./Work.css";
 import forkify from "../../Assets/Projects/forkify.jpg";
 import mapty from "../../Assets/Projects/mapty.jpg";
 import omnifood from "../../Assets/Projects/omnifood.jpg";
+import aiideas from "../../Assets/Projects/aiideas.png";
 
 export default function Work() {
   useEffect(() => {
@@ -48,6 +49,15 @@ export default function Work() {
           srcLink="https://github.com/lefkosp/forkify"
           // note={{ status: "yes", msg: "" }}
           flip={false}
+        />
+        <Project
+          img={aiideas}
+          title="AI Ideas"
+          description="An AI powered app that based on your skills and interests provides you with a personalized business idea for you to pursue."
+          techStack={["Angular, Material, Typescript"]}
+          link="https://aiideas.netlify.app/"
+          srcLink="https://github.com/lefkosp/aiideas"
+          flip={true}
         />
       </div>
     </section>
