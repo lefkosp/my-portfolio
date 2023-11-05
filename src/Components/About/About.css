@@ -34,6 +34,9 @@
 }
 
 .tech-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
   padding: 1rem 2rem 1rem 3rem;
   margin: 100px auto 50px auto;
   color: #ebeeeb;

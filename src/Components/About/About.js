@@ -55,8 +55,8 @@ export default function About() {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="icon icon-tabler icon-tabler-brand-html5"
-              width="44"
-              height="44"
+              width="38"
+              height="38"
               viewBox="0 0 24 24"
               strokeWidth="1"
               stroke="#ffffff"
@@ -74,8 +74,8 @@ export default function About() {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="icon icon-tabler icon-tabler-brand-css3"
-              width="44"
-              height="44"
+              width="38"
+              height="38"
               viewBox="0 0 24 24"
               strokeWidth="1"
               stroke="#ffffff"
@@ -93,8 +93,8 @@ export default function About() {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="icon icon-tabler icon-tabler-brand-sass"
-              width="44"
-              height="44"
+              width="38"
+              height="38"
               viewBox="0 0 24 24"
               strokeWidth="1"
               stroke="#ffffff"
@@ -112,8 +112,8 @@ export default function About() {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="icon icon-tabler icon-tabler-brand-tailwind"
-              width="44"
-              height="44"
+              width="38"
+              height="38"
               viewBox="0 0 24 24"
               strokeWidth="1"
               stroke="#ffffff"
@@ -130,8 +130,8 @@ export default function About() {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="icon icon-tabler icon-tabler-brand-javascript"
-              width="44"
-              height="44"
+              width="38"
+              height="38"
               viewBox="0 0 24 24"
               strokeWidth="1"
               stroke="#ffffff"
@@ -150,8 +150,8 @@ export default function About() {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="icon icon-tabler icon-tabler-brand-react-native"
-              width="44"
-              height="44"
+              width="38"
+              height="38"
               viewBox="0 0 24 24"
               strokeWidth="1"
               stroke="#ffffff"
@@ -169,6 +169,24 @@ export default function About() {
               <path d="M12.26 12.015h-.01c-.01 .13 -.12 .24 -.26 .24a0.263 .263 0 0 1 -.25 -.26c0 -.14 .11 -.25 .24 -.25h-.01c.13 -.01 .25 .11 .25 .24" />
             </svg>
             React.JS
+          </li>
+          <li className="tech-stack-item" data-aos="zoom-in">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="icon icon-tabler icon-tabler-brand-react-native"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              strokeWidth="1"
+              stroke="#ffffff"
+              fill="none"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <title>Angular</title>
+              <path d="M9.96 12.648h4.08L12 7.74l-2.04 4.908zM12 0 .828 3.984l1.704 14.772L12 24l9.468-5.244 1.704-14.772L12 0zm6.972 18.312h-2.604l-1.404-3.504H9.036l-1.404 3.504H5.028L12 2.652l6.972 15.66z" />
+            </svg>
+            Angular
           </li>
         </ul>
       </div>
