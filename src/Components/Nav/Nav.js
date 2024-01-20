@@ -3,7 +3,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import "./Nav.css";
 import logo from "../../Assets/logo-white.png";
-import resume from "../../Assets/CV Lefkos_Papapetrou.pdf";
+import resume from "../../Assets/Lefkos Papapetrou CV.pdf";
 
 export default function Nav() {
   const [openNav, setOpenNav] = useState(false);
@@ -134,9 +134,7 @@ export default function Nav() {
             Resume
           </a>
         </li>
-        <li
-          className="nav--list-item item2"
-        >
+        <li className="nav--list-item item2">
           <a href={resume} download className="nav--list-link nav--list-btn">
             Resume
           </a>
