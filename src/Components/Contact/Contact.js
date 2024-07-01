@@ -16,9 +16,10 @@ export default function Contact() {
         </h2>
         <div className="contact-container">
           <p className="contact-description" data-aos="fade-up">
-            As I am on the lookout to break into the intustry with my first job,
-            please feel free to contact me either for work or to say hi and have
-            a chat. <br></br> It would be my pleasure to talk to you.
+            Whether you're interested in discussing a potential project, seeking
+            collaboration, or just want to say hi, I'd love to hear from you.
+            <br></br>
+            Feel free to reach out!
           </p>
           <div className="nav--list-btn btn-div" data-aos="fade-up">
             <a href="mailto: lefkoss@hotmail.com" className="contact-link">
