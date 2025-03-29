@@ -65,15 +65,17 @@ export default function Project(props) {
             rel="noreferrer"
             className="project-link"
           >
-            <a
-              href={props.srcLink}
-              target="_blank"
-              rel="noreferrer"
-              className="project-src-link"
-              id="src-link"
-            >
-              Source code
-            </a>
+            {props.srcLink && (
+              <a
+                href={props.srcLink}
+                target="_blank"
+                rel="noreferrer"
+                className="project-src-link"
+                id="src-link"
+              >
+                Source code
+              </a>
+            )}
             <img
               src={props.img}
               className="work-img"
