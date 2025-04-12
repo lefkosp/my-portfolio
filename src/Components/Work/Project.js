@@ -25,7 +25,7 @@ export default function Project(props) {
           }
         >
           <h5 className="subheading" data-aos="fade-up">
-            Featured Project
+            {props.subheading}
           </h5>
           <h2
             className="heading-secondary"

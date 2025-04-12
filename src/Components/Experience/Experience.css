@@ -1,0 +1,56 @@
+.section-experience {
+  padding: 5rem 0;
+  position: relative;
+}
+
+.experience-section {
+  margin: 0px auto;
+  max-width: 1000px;
+  position: relative;
+}
+
+#section-experience {
+  padding-right: 10rem;
+  padding-left: 10rem;
+}
+
+#section-experience .section-headings {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 885px) {
+  #section-experience {
+    padding-right: 7rem;
+    padding-left: 7rem;
+  }
+}
+
+@media (max-width: 630px) {
+  #section-experience {
+    margin-top: 50px;
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  #section-experience {
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+}
+
+@media (max-width: 400px) {
+  #section-experience {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+}
+
+@media (max-width: 3600px) {
+  #section-experience {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
