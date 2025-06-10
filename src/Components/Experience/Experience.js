@@ -17,9 +17,23 @@ export default function Experience() {
       </h2>
       <div className="experience-section">
         <ExperienceItem
+          company="Odyssey Cybersecurity"
+          position="Software Developer (Frontend) - ClearSkiesTM"
+          period="June 2025 - Present"
+          description="Contributing to the modernization of a core internal platform by rebuilding the frontend using React, with a focus on improving usability, performance, and long-term maintainability."
+          responsibilities={[
+            "Rewriting the 'ClearSkies' platform's frontend from C# and Ext.NET to a modern React-based stack",
+            "Working closely with the backend and product teams to align UI implementation with business logic and user needs",
+            "Helping establish a clean, maintainable codebase using modern frontend development practices",
+            "Rapidly ramping up on a legacy system to ensure a smooth and effective transition to the new architecture",
+          ]}
+          data-aos="fade-up"
+          data-aos-delay="100"
+        />
+        <ExperienceItem
           company="Medlo"
           position="Frontend Developer"
-          period="April 2022 - Present"
+          period="April 2022 - May 2025"
           description="Leading frontend development initiatives and collaborating with cross-functional teams to deliver high-quality web applications using modern technologies and best practices."
           responsibilities={[
             "Spearheaded the development of a new internal staffing module using Angular and TypeScript, enhancing team resource management",
